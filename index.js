@@ -1,8 +1,8 @@
-const translation_table = {
+const transliterations = {
         elder_futhark: [
-		["ᚠ", "f"],
-		["ᚢ", "u"],
-		["ᚦ", "þ"],
+            ["ᚠ", "f"],
+            ["ᚢ", "u"],
+            ["ᚦ", "þ"],
             ["ᚨ", "a"],
             ["ᚱ", "r"],
             ["ᚲ", "k"],
@@ -139,24 +139,29 @@ const translation_table = {
 }
 
 
+const variants = Object.fromEntries(
+        Object.entries(transliterations).map(([k, _]) => [k, k])
+)
+
+
 function decode(string, variant='anglo_saxon') {
 
-	const mapping = Object.fromEntries(translation_table[variant])
+        const mapping = Object.fromEntries(transliterations[variant])
 
-	return string
-		.toLowerCase()
-		.split('')
-		.map(e => mapping[e] ?? e)
-		.join('')
+        return string
+                .toLowerCase()
+                .split('')
+                .map(e => mapping[e] ?? e)
+                .join('')
 }
 
 
 function encode(string, variant='anglo_saxon') {
 
-	const mapping = Object.fromEntries(translation_table[variant].map(([k, v]) => [v, k]))
+        const mapping = Object.fromEntries(transliterations[variant].map(([k, v]) => [v, k]))
 
         return string
-		.toLowerCase()
+                .toLowerCase()
                 .split('')
                 .map(e => mapping[e] ?? e)
                 .join('')
@@ -164,6 +169,7 @@ function encode(string, variant='anglo_saxon') {
 
 
 module.exports = {
-	encode,
-	decode,
+        encode,
+        decode,
+        variants,
 }
