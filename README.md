@@ -16,7 +16,7 @@ Translate between Latin and Runic script.
 Translation from Latin to Runic.
 
 ```js
-runes.encode('hello world')
+> runes.encode('hello world')
 
 'ᚻᛖᛚᛚᚩ ᚹᚩᚱᛚᛞ'
 ```
@@ -24,9 +24,9 @@ runes.encode('hello world')
 Translation from Runic to Latin.
 
 ```js
-runes.decode('ᚻᛖᛚᛚᚩ ᚹᚩᚱᛚᛞ')
+> runes.decode('ᚻᛖᛚᛚᚩ ᚹᚩᚱᛚᛞ')
 
-hello world
+'hello world'
 ```
 
 Note that casing is not preserved during translation.
