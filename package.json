@@ -1,7 +1,7 @@
 {
   "name": "rune",
   "version": "1.0.0",
-  "description": "Translatic between latin and runic script.",
+  "description": "Translate between Latin and Runic script.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
