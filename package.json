@@ -1,0 +1,11 @@
+{
+  "name": "rune",
+  "version": "1.0.0",
+  "description": "Translatic between latin and runic script.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
