@@ -34,5 +34,5 @@ Note that casing is not preserved during translation.
 
 ## Resources
 
-* Wikipedia: (Runes)[https://en.wikipedia.org/wiki/Runes#Runic_alphabets]
+* Wikipedia: [Runes](https://en.wikipedia.org/wiki/Runes#Runic_alphabets)
 * Runic translation tables (javascript): [unicode_runic.js](http://xahlee.info/comp/unicode_runic.js)
