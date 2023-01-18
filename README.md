@@ -1,6 +1,6 @@
 # Rune / ᚱᚢᚾᛖ
 
-Translate between Latin and Runic script.
+Translate from Latin to Runic and visa-versa 🎄.
 
 ```js
 > const rune = require('rune')
