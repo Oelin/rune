@@ -1,11 +1,11 @@
-# Runes / ᚱᚢᚾᛖᚴ
+# Rune / ᚱᚢᚾᛖ
 
 Translate between Latin and Runic script.
 
 ```js
-> const runes = require('runes')
+> const rune = require('rune')
 
-> runes.encode('foo bar')
+> rune.encode('foo bar')
 
 'ᚠᚩᚩ ᛒᚪᚱ'
 ```
@@ -16,7 +16,7 @@ Translate between Latin and Runic script.
 Translation from Latin to Runic.
 
 ```js
-> runes.encode('hello world')
+> rune.encode('hello world')
 
 'ᚻᛖᛚᛚᚩ ᚹᚩᚱᛚᛞ'
 ```
@@ -24,7 +24,7 @@ Translation from Latin to Runic.
 Translation from Runic to Latin.
 
 ```js
-> runes.decode('ᚻᛖᛚᛚᚩ ᚹᚩᚱᛚᛞ')
+> rune.decode('ᚻᛖᛚᛚᚩ ᚹᚩᚱᛚᛞ')
 
 'hello world'
 ```
@@ -37,7 +37,7 @@ Note that casing is not preserved during translation.
 The default form of runic used is "Anglo Saxon" with id `anglo_saxon`. However, this library supports several other types which can be specified using the `variant` parameter. For example:
 
 ```js
-> runes.encode('hello world', variant=runes.variants.medieval)
+> rune.encode('hello world', variant=runes.variants.medieval)
 
 'ᚼᛂᛚᛚᚮ'
 ```
@@ -46,11 +46,11 @@ Supported variants:
 
 | Name                         | String                          | Code                                         |
 |------------------------------|---------------------------------|----------------------------------------------|
-| Elder Futhark                | `'elder_futhark'`               | `runes.variants.elder_futhark`               |
-| Anglo Saxon                  | `'anglo_saxon'`                 | `runes.variants.anglo_saxon`                 |
-| Yonger Futhark (Long Branch) | `'younger_futhark_long_branch'` | `runes.variants.younger_futhark_long_branch` |
-| Yonger Futhark (Short Twig)  | `'younger_futhark_short_twig'`  | `runes.variants.younger_futhark_short_twig`  |
-| Medieval                     | `'medieval'`                    | `runes.variants.medieval`                    |
+| Elder Futhark                | `'elder_futhark'`               | `rune.variants.elder_futhark`               |
+| Anglo Saxon                  | `'anglo_saxon'`                 | `rune.variants.anglo_saxon`                 |
+| Yonger Futhark (Long Branch) | `'younger_futhark_long_branch'` | `rune.variants.younger_futhark_long_branch` |
+| Yonger Futhark (Short Twig)  | `'younger_futhark_short_twig'`  | `rune.variants.younger_futhark_short_twig`  |
+| Medieval                     | `'medieval'`                    | `rune.variants.medieval`                    |
 
 
 ## Resources
